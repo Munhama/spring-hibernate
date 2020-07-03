@@ -1,1 +1,1 @@
-spring-demo-one
+Udemy course Spring & Hibernate
