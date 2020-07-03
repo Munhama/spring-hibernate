@@ -11,8 +11,8 @@ public class BeanScopeDemoApp {
 				new ClassPathXmlApplicationContext("beanScope-applicationContext.xml");
 		
 		// retrieve bean from spring container
-		Coach theCoach = context.getBean("myCoach", Coach.class);
-		Coach secondCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("hockeyCoach", Coach.class);
+		Coach secondCoach = context.getBean("hockeyCoach", Coach.class);
 		
 		// check if they are the same bean
 		boolean result = (theCoach==secondCoach);

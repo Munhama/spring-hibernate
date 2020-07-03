@@ -31,6 +31,12 @@
     	<!-- Set up constructor injection -->
     	<constructor-arg ref="myFortune" />
     </bean>
+    
+    <bean id="hockeyCoach"
+    	class="com.luv2code.springdemo.HockeyCoach"
+    	scope="prototype">
+    
+    </bean>
 
 </beans>
 
