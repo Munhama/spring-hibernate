@@ -6,8 +6,14 @@ import org.springframework.stereotype.Component;
 public class FootballCoach implements Coach {
 
 	@Override
-	public String getDeilyWorkout() {
+	public String getDailyWorkout() {
 		return "Score 10 goals";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
