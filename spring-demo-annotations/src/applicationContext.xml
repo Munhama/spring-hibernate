@@ -20,6 +20,9 @@
 	<!-- add entry to enable component scanning -->
 	<context:component-scan base-package="com.luv2code.springdemo" />
 	
+	<!-- load the properties file -->
+	<context:property-placeholder location="fortune.properties"/>
+	
 </beans>
 
 
