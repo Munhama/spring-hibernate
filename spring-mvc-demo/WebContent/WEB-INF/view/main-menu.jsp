@@ -8,6 +8,10 @@
 
 <a href="hello/showForm">Hello World Form</a>
 
+<br></br>
+
+<a href="student/showForm">Student Registration Form</a>
+
 </body>
 
 </html>
