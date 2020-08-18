@@ -27,6 +27,7 @@ public class StudentController {
 		// log the input data
 		System.out.println("First Name: " + student.getFirstName());
 		System.out.println("Last Name: " + student.getLastName());
+		System.out.println("Country: " + student.getCountry());
 		
 		return "studen-confirmation";
 	}
