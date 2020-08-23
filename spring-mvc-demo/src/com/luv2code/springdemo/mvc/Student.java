@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.LinkedHashMap;
+
 public class Student {
 
 	private String firstName;
@@ -7,8 +9,18 @@ public class Student {
 	private String country;
 	private String favoriteLanguage;
 	
+	private LinkedHashMap<String, String> favoriteLanguageOptions;
+	
 	public Student() {
+		// populate favorite language options
+		favoriteLanguageOptions = new LinkedHashMap<String, String>();
 		
+		// parameter order: value, display label
+		favoriteLanguageOptions.put("Java", "Java");
+		favoriteLanguageOptions.put("C", "C");
+		favoriteLanguageOptions.put("Go", "Go");
+		favoriteLanguageOptions.put("Python", "Python");
+		favoriteLanguageOptions.put("PHP", "PHP");
 	}
 
 	public String getFirstName() {
@@ -42,7 +54,9 @@ public class Student {
 	public void setFavoriteLanguage(String favoriteLanguage) {
 		this.favoriteLanguage = favoriteLanguage;
 	}
-	
-	
+
+	public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+		return favoriteLanguageOptions;
+	}
 	
 }
