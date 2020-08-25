@@ -10,11 +10,11 @@
 	
 		First Name: <form:input path="firstName"/>
 		
-		<br></br>
+		<br><br>
 		
 		Last Name: <form:input path="lastName"/>
 		
-		<br></br>
+		<br><br>
 		
 		Country:
 		
@@ -22,13 +22,13 @@
 			<form:options items="${countryOptions}" />
 		</form:select>
 		
-		<br></br>
+		<br><br>
 		
 		Favorite Language:
 		
 		<form:radiobuttons path="favoriteLanguage" items="${student.favoriteLanguageOptions}" />
 		
-		<br></br>
+		<br><br>
 		
 		Operating System:
 		
@@ -36,7 +36,7 @@
 		Mac OS <form:checkbox path="operatingSystem" value="Mac OS" />
 		MS Windows <form:checkbox path="operatingSystem" value="MS Windows" />
 		
-		<br></br>
+		<br><br>
 		
 		<input type="submit" value="Submit" />
 		
