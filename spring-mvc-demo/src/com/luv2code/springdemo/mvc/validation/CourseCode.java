@@ -16,10 +16,10 @@ import javax.validation.Payload;
 public @interface CourseCode {
 
 	// define default course code
-	public String value() default "LUV";
+	public String[] value() default {"LUV", "TOP"};
 	
 	// define default error message
-	public String message() default "must start with LUV";
+	public String message() default "must start with LUV or TOP";
 	
 	// define default groups
 	public Class<?>[] groups() default {};
