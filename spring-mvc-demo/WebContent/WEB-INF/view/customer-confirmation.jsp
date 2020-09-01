@@ -10,6 +10,10 @@
 <body>
 
 	The customer: ${customer.firstName} ${customer.lastName}
+	
+	<br><br>
+	
+	Free Pass: ${customer.freePasses}
 
 </body>
 

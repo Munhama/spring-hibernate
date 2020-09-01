@@ -23,7 +23,12 @@
 		<br><br>
 		
 		Last Name (*): <form:input path="lastName"/>
-		<form:errors path="lastName" cssClass="error" />
+		<form:errors path="lastName" cssClass="error"/>
+		
+		<br><br>
+		
+		Free Passes: <form:input path="freePasses"/>
+		<form:errors path="freePass" cssClass="error"/>
 		
 		<br><br>
 		
