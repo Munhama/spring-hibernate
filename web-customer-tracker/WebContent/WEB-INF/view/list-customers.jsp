@@ -17,12 +17,18 @@
 
 	<div id="wrapper">
 		<div id="header">
-			<H2>CRM - Customer Relationship Manager</H2>
+			<h2>CRM - Customer Relationship Manager</h2>
 		</div>
 	</div>
 
 	<div id="container">
 		<div id="content">
+
+			<!-- pub button: Add Customer -->
+			<input type="button" value="Add Customer"
+				onclick="window.location.href='showFormForAdd'; return false;"
+				class="add-button" />
+
 			<table>
 				<tr>
 					<th>First Name</th>
