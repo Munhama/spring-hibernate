@@ -58,11 +58,30 @@ public class CustromerController {
 
 		// get the customer form service
 		Customer customer = customerService.getCustomer(id);
-		
+
 		// set customer as a model attribute to pre-populate the form
 		model.addAttribute("customer", customer);
-		
+
 		// send over to our form
 		return "customer-form";
+	}
+
+	@GetMapping("/delete")
+	public String deleteCustomer(@RequestParam("customerId") int id) {
+
+		// delete the customer
+		customerService.deleteCustomer(id);
+
+		return "redirect:/customer/list";
+	}
+
+	@GetMapping("/search")
+	public String searchCustomer(@RequestParam("searchName") String searchName, Model model) {
+
+		List<Customer> customer = customerService.searchCustomer(searchName);
+
+		model.addAttribute("customers", customer);
+
+		return "list-customers";
 	}
 }
