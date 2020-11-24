@@ -24,6 +24,22 @@
 			<br><br>
 			Role: <security:authentication property="principal.authorities" />
 		</p>
+		
+		<!-- Add a link to point to /leader -->
+		<security:authorize access="hasRole('MANAGER')">	
+			<p>
+				<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+				(Only for Manager)
+			</p>
+		</security:authorize>	
+		
+		<!-- Add a link to point to /systems -->
+		<security:authorize access="hasRole('ADMIN')">
+			<p>
+				<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+				(Only for Admin)
+			</p>
+		</security:authorize>
 	
 	<hr>
 	
